@@ -114,6 +114,12 @@
     position: absolute;
     background: white;
 }
+.games_dropdown{
+    
+    right: 205px;
+    position: absolute;
+    background: white;
+}
 ul{
     list-style: none;
     margin: 0px;
@@ -129,4 +135,74 @@ padding-right: 20px;
 li:hover{
 background-color: bisque;
 
+}
+
+.sign_in_popup{
+    position: absolute;
+    height: 450px;
+    width: 620px;
+    background: white;
+    border-radius: 10px;
+    left: 500px;
+    box-shadow: 2px 2px 2px 2px;
+    top: 100px;
+}
+
+.close{
+    align-self: flex-end;
+    margin-top: -38px;
+    margin-right: 20px;
+    padding-bottom: 17px;
+    cursor: pointer;
+}
+
+.sign_text{
+    align-self: flex-start;
+    margin-top: 16px;
+    margin-left: 21px;
+    margin-right: 20px;
+    font-size: 20px;
+    color: #abef9f;
+    padding-bottom: 17px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.top_text{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+}
+
+.form{
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.submit_btn{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    width:fit-content;
+    text-align: center;
+    padding: 8px 14px 18px;
+    color: #fff;
+    background-color: #15883e;
+    height: 5px;
+    margin-top: 32px;
+    margin-left: 214px;
+}
+.submit_btn:hover{
+    background-color: #1db954;
+}
+.subject_dropdown1{
+    right:244px;
+}
+.games_dropdown1{
+    right: 140px;
 }

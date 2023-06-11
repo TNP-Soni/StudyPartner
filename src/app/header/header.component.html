@@ -3,8 +3,8 @@
     <div class="right_menu">
         <div class="top_nav">
             <div class = "nav_item" href="#">Home</div>
-            <div class = "nav_item" [ngClass]="{'active':showdrop}" (click)="showdropdown()" >Subjects</div>
-            <div class = "nav_item" href="#">Games</div>
+            <div class = "nav_item" [ngClass]="{'active':showdrop}" (click)="showdropdown()">Subjects</div>
+            <div class = "nav_item" [ngClass]="{'active':showdropGames}" (click)="showdropdownGames()">Games</div>
             <div class = "nav_item" href="#">Guide</div> 
         </div>
         <div class="line"></div>
@@ -19,12 +19,50 @@
 </div>
 
 
-<div class="subject_dropdown" *ngIf="showdrop">
+<div class="subject_dropdown" *ngIf="showdrop" [ngClass]="{'subject_dropdown1':signedin}">
     <ul>
-        <li>Mathematics</li>
+        <li style="margin-top: 10px;">Mathematics</li>
         <li>Engilsh</li>
         <li>Hindi</li>
         <li>Science</li>
     </ul>
 </div>
 
+<div class="games_dropdown" *ngIf="showdropGames" [ngClass]="{'games_dropdown1':signedin}">
+    <ul>
+        <li style="margin-top: 10px;">English Activities</li>
+        <li>Math Games</li>
+        <li>Experiments</li>
+    </ul>
+</div>
+
+<div class="sign_in_popup" *ngIf="showSigninpopup">
+    <div class="top_text">
+        <div class="sign_text">Sign-Up</div>
+        <div class="close" (click)="closepopup()">X</div>
+    </div>
+    <div class="form">
+        <div class="name">
+            <a>Name</a>
+            <input type="text" #name aria-label="name" style="width: 300px; margin-left: 10px; font-size: 15px;" placeholder="Full Name"/>
+        </div>
+        <div class="name">
+            <a>Email</a>
+            <input type="email" #mail aria-label="mail" style="width: 300px; margin-left: 10px; margin-top: 20px; font-size: 15px;" placeholder="Email"/>
+        </div>
+        <div class="name">
+            <a>Confirm Email</a>
+            <input type="email" #confirm_mail aria-label="mail" style="width: 300px; margin-left: 10px;  margin-top: 20px; font-size: 15px;" placeholder="Confirm Email"/>
+        </div>
+        <div class="name">
+            <a>Age</a>
+            <input type="number" #age aria-label="age" style="width: 300px; margin-left: 10px; margin-top: 20px; font-size: 15px;" placeholder="Age"/>
+        </div>
+        <div class="name">
+            <a>Password</a>
+            <input type="password" #password aria-label="password" style="width: 300px; margin-left: 10px; margin-top: 20px; font-size: 15px;" placeholder="Password"/>
+        </div>
+        <div class="submit_btn" (click)="signupsubmit(name.value,mail.value,confirm_mail.value,age.value,password.value)">Submit</div>
+    </div>
+    
+</div>

@@ -3,7 +3,7 @@
         The Easier Way to Learn
     </div>
     <div class="sub_text">
-       Study Partner is here to make your studies easier and gu ide you through your subjects 
+       Study Partner is here to make your studies easier and guide you through your subjects 
     </div>
     <div class="search_bar">
         <input type="text" class="input_box" (keyup.enter)="searchCourse(seachText.value)" #seachText placeholder="Get Started Today">       
@@ -14,26 +14,26 @@
 <div class="horizontal_line">
 </div>
 <div class="subject_cards">
-    <div class="math card">
+    <div class="math card" (click)="openSubjectComponent()"  >
         <img src="../../assets/icons/maths.jpg" alt="Avatar" style="width:100%">
         <div class="container">
           <h4><b>Mathematics</b></h4>
         </div>
       </div>
       <div class="card english">
-        <img src="../../assets/icons/english.jpeg" alt="Avatar" style="width:100%">
+        <img src="../../assets/icons/english.jpeg" (click)="openSubjectComponent()"   alt="Avatar" style="width:100%">
         <div class="container">
           <h4><b>Engilsh</b></h4>
         </div>
       </div>
       <div class="card hindi">
-        <img src="../../assets/icons/hindi.png" alt="Avatar" style="width:100%; height: 138px;">
+        <img src="../../assets/icons/hindi.png" (click)="openSubjectComponent()"   alt="Avatar" style="width:100%; height: 138px;">
         <div class="container">
           <h4><b>Hindi</b></h4>
         </div>
       </div>
       <div class="card science">
-        <img src="../../assets/icons/science.png" alt="Avatar" style="width:100% ; height: 138px;">
+        <img src="../../assets/icons/science.png"  (click)="openSubjectComponent()"   alt="Avatar" style="width:100% ; height: 138px;">
         <div class="container">
           <h4><b>Science</b></h4>
         </div>
@@ -46,5 +46,29 @@
         Learn <br>
         With<br>
         Fun
+    </div>
+    <div class="card english_acti">
+      <img src="../../assets/icons/english_acti.jpeg" alt="Avatar" style="width:100% ; height: 138px;">
+      <div class="container">
+        <h4 style="color: white;"><b>English Activities</b></h4>
+      </div>
+    </div>
+    <div class="card english_acti">
+      <img src="../../assets/icons/science_acti.jpeg" alt="Avatar" style="width:100% ; height: 138px;">
+      <div class="container">
+        <h4 style="color: white;"><b>Science Experiments</b></h4>
+      </div>
+    </div>
+    <div class="card english_acti">
+      <img src="../../assets/icons/math_acti.jpeg" alt="Avatar" style="width:100% ; height: 138px;">
+      <div class="container">
+        <h4 style="color: white;"><b>Math Games</b></h4>
+      </div>
+    </div>
+    <div class="right_text">
+      ... & so much more
+    </div>
+    <div class="btn activities_btn">
+      Browse Activities
     </div>
 </div>

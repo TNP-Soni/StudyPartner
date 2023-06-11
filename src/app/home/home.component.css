@@ -135,3 +135,21 @@
     color: white;
     font-size: 55px;    
   }
+  .english_acti{
+    margin-top: 60px;
+    margin-left: 50px;
+  }
+
+  .right_text{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 200px;
+    margin-left: 100px;
+  }
+  .activities_btn{
+    width: 155px;
+    margin: 0px;
+    margin-top: 150px;
+    margin-left: 30px;
+  }

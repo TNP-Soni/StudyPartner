@@ -1,4 +1,4 @@
 <app-header></app-header>
-<app-home ></app-home>
-
+<app-home (changeScreenEvent)="changescreen($event)" *ngIf="!gotosubject && gotohome"></app-home>
+<app-subject-description (changeScreenEvent)="changescreen($event)" *ngIf="gotosubject && !gotohome"></app-subject-description>
 <router-outlet></router-outlet>

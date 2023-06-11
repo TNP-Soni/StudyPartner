@@ -1,0 +1,23 @@
+.sub_name{
+    display: block;
+    background: #abef9f;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    padding-top: 6px;
+}
+.card{
+    width: 80%;
+    margin-left: 210px;
+    cursor: pointer;
+    margin-top: 50px;
+    box-shadow: 2px 2px 2px 2px #ABEF9E;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 32px;
+}
+.card:hover{
+    background-color: #ABEF9E;
+}
