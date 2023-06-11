@@ -1,0 +1,30 @@
+<div class="header_part row">
+    <div class="left_text">Study Partner</div>
+    <div class="right_menu">
+        <div class="top_nav">
+            <div class = "nav_item" href="#">Home</div>
+            <div class = "nav_item" [ngClass]="{'active':showdrop}" (click)="showdropdown()" >Subjects</div>
+            <div class = "nav_item" href="#">Games</div>
+            <div class = "nav_item" href="#">Guide</div> 
+        </div>
+        <div class="line"></div>
+        <div class="profile_dropdown" *ngIf="signedin">
+        </div>
+        <div class="sign_in_btn" (click)="triggerSignIn()" *ngIf="!signedin">
+            <button class="btn">
+                Sign-In
+            </button>
+        </div>
+    </div>
+</div>
+
+
+<div class="subject_dropdown" *ngIf="showdrop">
+    <ul>
+        <li>Mathematics</li>
+        <li>Engilsh</li>
+        <li>Hindi</li>
+        <li>Science</li>
+    </ul>
+</div>
+
